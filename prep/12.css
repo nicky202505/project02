@@ -1,0 +1,438 @@
+:root {
+  --default-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Ubuntu, "Helvetica Neue", Helvetica, Arial, "PingFang SC",
+    "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei",
+    "Source Han Sans CN", sans-serif;
+}
+
+.main-container {
+  overflow: hidden;
+} 
+
+.main-container,
+.main-container * {
+  box-sizing: border-box;
+}
+
+input,
+select,
+textarea,
+button {
+  outline: 0;
+}
+
+.wrap {
+  position: relative;
+  width: 1920px;
+  height: 4500px;
+  margin: 0 auto;
+  background: #ffffff;
+  overflow: hidden;
+} 
+
+.h_container{
+  width : 100% ; 
+  height : 90px ; 
+  background-color: yellow;  
+
+}
+
+.h_wrap {
+  position: relative;
+  width: 1200px;
+  height: 90px;
+/*   margin: 0 0 0 360px;
+ */  border: 2px solid #e42626;
+  overflow: hidden ; 
+  margin: auto ; ; 
+}  
+
+header{
+  width : 100% ; 
+  height : 90px ; 
+  background-color: yellow;  
+} 
+
+.h_wrap{   
+  width : 1200px ; 
+  height : 90px ; 
+  margin: auto ; 
+}
+
+.language {
+  position: absolute;
+  width: 98px;
+  height: 36px;
+  top: 50%;
+  left: 50%;
+  border: 2px solid #dc3b3b;
+  transform: translate(508.16%, -130.56%);
+  z-index: 2;
+  overflow: hidden;
+}
+
+
+.resconfirm {
+  position: absolute;
+  width: 84px;
+  height: 36px;
+  top: 50%;
+  left: 50%;
+  border: 2px solid #dc3b3b;
+  transform: translate(492.86%, -130.56%);
+  z-index: 6;
+  overflow: hidden;
+}
+.rewards {
+  position: absolute;
+  width: 88px;
+  height: 36px;
+  top: 50%;
+  left: 50%;
+  border: 2px solid #dc3b3b;
+  transform: translate(375%, -130.56%);
+  z-index: 7;
+  overflow: hidden;
+}
+.login {
+  position: absolute;
+  width: 88px;
+  height: 36px;
+  top: 50%;
+  left: 50%;
+  border: 2px solid #dc3b3b;
+  transform: translate(275%, -130.56%);
+  z-index: 8;
+  overflow: hidden;
+}
+.ci {
+  position: absolute;
+  width: 202px;
+  height: 50px;
+  top: 50%;
+  left: 50%;
+  border: 2px solid #dc3b3b;
+  transform: translate(-50.99%, -54%);
+  z-index: 1;
+  overflow: hidden;
+}
+.sinlashop {
+  position: absolute;
+  width: 98px;
+  height: 51px;
+  top: 50%;
+  left: 50%;
+  border: 2px solid #dc3b3b;
+  transform: translate(512.24%, -21.57%);
+  opacity: 0.65;
+  z-index: 3;
+  overflow: hidden;
+}
+.member {
+  position: absolute;
+  width: 92px;
+  height: 51px;
+  top: 50%;
+  left: 50%;
+  border: 2px solid #dc3b3b;
+  transform: translate(445.65%, -21.57%);
+  opacity: 0.65;
+  z-index: 4;
+  overflow: hidden;
+}
+.greeting {
+  position: absolute;
+  width: 112px;
+  height: 51px;
+  top: 50%;
+  left: 50%;
+  border: 2px solid #dc3b3b;
+  transform: translate(266.07%, -21.57%);
+  opacity: 0.65;
+  z-index: 5;
+  overflow: hidden;
+}
+.hsearch {
+  position: absolute;
+  width: 111px;
+  height: 51px;
+  top: 37px;
+  left: -2px;
+  background: #d9d9d9;
+  z-index: 9;
+}
+.calender{
+  position: absolute;
+  width: 83px;
+  height: 51px;
+  top: 37px;
+  left: 129px;
+  background: #d9d9d9;
+  z-index: 10;
+}  
+
+/*  헤더 끝  */ 
+
+/* 배너 시작 */ 
+
+.banner{
+  width: 1920px ; 
+  height:  650px ; 
+  border: 1px solid red ;   
+  margin : auto ; 
+  margin-top : 40px ;  
+}
+
+/* 예약창 */
+.reservarion {
+  position: relative;
+  width: 1200px;
+  height: 99px;
+  margin: 699px 0 0 358px;
+  border: 2px solid #e42626;
+  z-index: 11;
+  overflow: hidden;
+}
+.res {
+  position: absolute;
+  width: 517px;
+  height: 48px;
+  top: 33px;
+  left: 176px;
+  border: 2px solid #cc2f2f;
+  z-index: 13;
+  overflow: hidden;
+}
+.res_search {
+  position: absolute;
+  width: 379px;
+  height: 60px;
+  top: 35px;
+  left: 819px;
+  border: 2px solid #df3333;
+  z-index: 12;
+  overflow: hidden;
+}
+.frame-6 {
+  position: relative;
+  width: 1200px;
+  height: 95px;
+  margin: 57px 0 0 367px;
+  z-index: 22;
+  overflow: hidden;
+}
+.frame-7 {
+  position: relative;
+  width: 1380px;
+  height: 80px;
+  margin: 99px 0 0 270px;
+  border: 2px solid #d63636;
+  z-index: 14;
+  overflow: hidden;
+}
+.frame-8 {
+  position: relative;
+  width: 367px;
+  height: 81px;
+  margin: -1px 0 0 506px;
+  border: 2px solid #901616;
+  z-index: 15;
+  overflow: hidden;
+}
+.frame-9 {
+  position: relative;
+  width: 1200px;
+  height: 336px;
+  margin: 800px 0 0 350px;
+  border: 2px solid #a71919;
+  z-index: 23;
+  overflow: hidden;
+}
+.frame-a {
+  position: relative;
+  width: 1200px;
+  height: 100px;
+  margin: 262px 0 0 360px;
+  border: 2px solid #e82727;
+  z-index: 25;
+  overflow: hidden;
+}
+.flex-row-ae {
+  position: absolute;
+  width: 1198px;
+  height: 96px;
+  top: -2px;
+  left: 0;
+  z-index: 30;
+}
+.frame-b {
+  position: absolute;
+  width: 233px;
+  height: 46px;
+  top: 0;
+  left: 459px;
+  border: 1px solid #c63a3a;
+  z-index: 28;
+  overflow: hidden;
+}
+.frame-c {
+  position: absolute;
+  width: 219px;
+  height: 46px;
+  top: 4px;
+  left: 0;
+  border: 1px solid #c63a3a;
+  z-index: 26;
+  overflow: hidden;
+}
+.frame-d {
+  position: absolute;
+  width: 240px;
+  height: 46px;
+  top: 4px;
+  left: 219px;
+  border: 1px solid #c63a3a;
+  z-index: 27;
+  overflow: hidden;
+}
+.frame-one-e {
+  position: absolute;
+  width: 277px;
+  height: 92px;
+  top: 4px;
+  left: 921px;
+  border: 1px solid #e02b2b;
+  z-index: 30;
+  overflow: hidden;
+}
+.frame-two-f {
+  position: relative;
+  width: 181px;
+  height: 56px;
+  margin: 64px 0 0 96px;
+  border: 2px solid #b21e1e;
+  z-index: 31;
+  overflow: hidden;
+}
+.frame-three-10 {
+  position: absolute;
+  width: 774px;
+  height: 42px;
+  top: 52px;
+  left: -2px;
+  border: 1px solid #c63a3a;
+  z-index: 29;
+  overflow: hidden;
+}
+.frame-four-11 {
+  position: relative;
+  width: 1453px;
+  height: 936px;
+  margin: 47px 0 0 251px;
+  border: 1px solid #2c14b7;
+  z-index: 32;
+  overflow: hidden;
+}
+.frame-five-12 {
+  position: relative;
+  width: 170px;
+  height: 80px;
+  margin: 26px 0 0 624px;
+  border: 2px solid #961a1a;
+  z-index: 33;
+  overflow: hidden;
+}
+.frame-six-13 {
+  position: relative;
+  width: 1200px;
+  height: 720px;
+  margin: 50px 0 0 109px;
+  border: 2px solid #c62828;
+  z-index: 34;
+  overflow: hidden;
+}
+.frame-seven-14 {
+  position: relative;
+  width: 1382px;
+  height: 170px;
+  margin: 107px 0 0 269px;
+  border: 2px solid #c71c1c;
+  z-index: 35;
+  overflow: hidden;
+}
+.frame-eight {
+  position: relative;
+  width: 1382px;
+  height: 182px;
+  margin: 0 0 0 269px;
+  border: 2px solid #c71c1c;
+  z-index: 36;
+  overflow: hidden;
+}
+.frame-15 {
+  position: absolute;
+  width: 792px;
+  height: 359px;
+  top: 1278px;
+  left: 364px;
+  border: 2px solid #9f2121;
+  z-index: 21;
+  overflow: hidden;
+}
+.frame-16 {
+  position: absolute;
+  width: 1200px;
+  height: 640px;
+  top: 1280px;
+  left: 50%;
+  border: 2px solid #a72626;
+  transform: translate(-50.17%, 0);
+  z-index: 16;
+  overflow: hidden;
+}
+.frame-17 {
+  position: relative;
+  width: 376px;
+  height: 259px;
+  margin: 2px 0 0 820px;
+  border: 2px solid #dc3b3b;
+  z-index: 19;
+  overflow: hidden;
+}
+.flex-row-cdca {
+  position: relative;
+  width: 1192px;
+  height: 357px;
+  margin: 24px 0 0 0;
+  z-index: 20;
+}
+.frame-18 {
+  position: absolute;
+  width: 372px;
+  height: 357px;
+  top: 0;
+  left: 820px;
+  border: 2px solid #e12525;
+  z-index: 20;
+  overflow: hidden;
+}
+.frame-19 {
+  position: absolute;
+  width: 385px;
+  height: 261px;
+  top: 96px;
+  left: 0;
+  border: 2px solid #e11010;
+  z-index: 17;
+  overflow: hidden;
+}
+.frame-1a {
+  position: absolute;
+  width: 385px;
+  height: 261px;
+  top: 96px;
+  left: 407px;
+  border: 2px solid #e11010;
+  z-index: 18;
+  overflow: hidden;
+}
