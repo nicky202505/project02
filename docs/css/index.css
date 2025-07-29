@@ -1,14 +1,18 @@
-:root {
-  --default-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Ubuntu, "Helvetica Neue", Helvetica, Arial, "PingFang SC",
-    "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei",
-    "Source Han Sans CN", sans-serif;
-} 
 
+
+*{
+  font-family: "Dotum", "돋움", sans-serif;
+}
+
+body, .main-container{
+  margin : 0 ; 
+  padding : 0 ; 
+}
 
 
 .main-container {
-  overflow: hidden;
+  overflow: hidden; 
+  
 }
 
 .main-container,
@@ -25,73 +29,51 @@ button {
 
 .main-container {
   position: relative;
-  width: 1920px ; 
+  width: 100% ; 
+  max-width: 1920px ; 
   margin : 0 auto ; 
-  height: 4403px;
-
+  height: auto; 
   background: #ffffff;
   overflow: hidden;
+  padding-top: 90px ;
 }
 
  
   .h_wrap {
-  position: relative; 
-  width : 100% ;      
+   position: absolute;
+  width: 100%;
   height: 90px;
-  margin: 0 ; 
   background: #f1e3c4;
-  z-index: 1;
-  overflow: visible auto; 
-} 
-
-/* .h_wrap {
-  position: relative;
-  left: 50%;
-  right: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;
-  width: 100vw;
-  min-width: 100vw;
-  background: #f5f5f5;
-} */
-
-/* .h_wrap {
-  position: relative;
-  left: 50%;
-  right: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;
-  width: 100vw;
-  min-width: 100vw;
-  background: #f5e9cc;
-  box-sizing: border-box;
   z-index: 10;
-}
- */
+  }
+  
 
-/*  .h_wrap {
-  position: relative;
-  left: 50%;
-  right: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;
-  width: 100vw;
-  min-width: 100vw;
-  background: #f5e9cc; /* 헤더 배경색 예시 */
-/*   box-sizing: border-box;
-  z-index: 10; */
-/* }
-  */
+  .h_wrap_copy{ 
+     display: none;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 60px;
+  background:  #f1e3c4;
+  color: #fff;
+  z-index: 20000; 
+  text-align : center ;  
+
+  }  
+
 
 
 .rectangle-1 {
   position: relative;
-  width: 1200px;
+  width: 100%; 
+  max-width: 1200px;
   height: 90px;
-  margin: 0 0 0 360px;
+  margin: 0 auto ;  
   background: #f1e3c4;
   z-index: 3;
 }
+
+
 .group {
   position: absolute;
   width: 96px;
@@ -103,6 +85,8 @@ button {
   background-size: cover;
   z-index: 22;
 }
+
+
 .korean {
   display: flex;
   align-items: flex-start;
@@ -120,6 +104,8 @@ button {
   white-space: nowrap;
   z-index: 23;
 }
+
+
 .group-2 {
   position: absolute;
   width: 88px;
@@ -131,6 +117,8 @@ button {
   background-size: cover;
   z-index: 5;
 }
+
+
 .shilla-rewards {
   display: flex;
   align-items: flex-start;
@@ -148,6 +136,8 @@ button {
   white-space: nowrap;
   z-index: 6;
 }
+
+
 .rectangle-3 {
   position: absolute;
   width: 84px;
@@ -158,6 +148,8 @@ button {
   border: 1px solid #d52121;
   z-index: 19;
 }
+
+
 .reservation-check {
   display: flex;
   align-items: flex-start;
@@ -175,6 +167,8 @@ button {
   white-space: nowrap;
   z-index: 20;
 }
+
+
 .rectangle-4 {
   position: absolute;
   width: 76px;
@@ -185,6 +179,10 @@ button {
   border: 1px solid #d52121;
   z-index: 15;
 }
+
+
+
+
 .login {
   display: flex;
   align-items: flex-start;
@@ -202,6 +200,8 @@ button {
   white-space: nowrap;
   z-index: 16;
 }
+
+
 .top-logo {
   position: absolute;
   width: 200.887px;
@@ -213,6 +213,18 @@ button {
   background-size: cover;
   z-index: 33;
 }
+
+
+.top-logo-2{
+  position: absolute;
+  width: 200.887px;
+  height: 49.725px;
+  top: 19.643px;
+  left: 454.556px;   
+  background-size: cover;
+  z-index: 55;  
+}
+
 .group-5 {
   position: absolute;
   width: 111px;
@@ -333,8 +345,9 @@ button {
   height: 111px;
   margin: 853px 0 0 363px;
   background: #f2f2f2;
-  z-index: 67;
+  z-index: 67;   
 }
+
 .online-reservation {
   display: flex;
   align-items: flex-start;
@@ -1201,7 +1214,7 @@ button {
     no-repeat center;
   background-size: cover;  
   margin: auto ; 
-/*   z-index: 34;
+  z-index: 1;
  */}   
 
 .banner02{ 
@@ -1212,10 +1225,9 @@ button {
   left: 0;
   background : url(../images/banner2.jpg) no-repeat center;     
   background-size: cover; 
-    margin: auto ; 
-    
-/*   z-index: 34;   
- */}
+  margin: auto ;  
+ z-index: ;   
+ }
 
 .banner03{ 
   position: absolute;
@@ -1226,8 +1238,8 @@ button {
   background : url(../images/banner3.jpg) no-repeat center;     
   background-size: cover;  
     margin: auto ; 
-/*   z-index: 34; 
- */}
+   z-index: 1; 
+ }
 
 
 .group-40 {
@@ -1236,11 +1248,12 @@ button {
   top: 740px;
   right: 358px;
   left: 359px;
-  background: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-07-29/OLft3OOrkS.png)
+    background: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-07-29/OLft3OOrkS.png)
     no-repeat center;
-  background-size: cover;
-  z-index: 38;
-}
+  background-size: cover ; 
+ */  z-index: 38;
+ */}   /* 예약창  */    
+
 .search {
   display: flex;
   align-items: flex-start;
@@ -1264,8 +1277,8 @@ button {
   height: 60px;
   top: 783px;
   left: 362px;
-  background: #d9d9d9;
-  z-index: 40;
+   background: #d9d9d9;
+   z-index: 40;  /* 예약창  */
 }
 .hotel-city {
   display: flex;

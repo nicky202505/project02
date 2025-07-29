@@ -10,8 +10,7 @@
     <link rel="stylesheet" href="css/index.css" />
   </head>
   <body>
-    <div class="main-container">
-      <div class="h_wrap">          
+          <div class="h_wrap">          
         <div class="rectangle-1">  <!-- 우상단 시작  -->
           <div class="group"><span class="korean">한국어</span></div>
           <div class="group-2"> 
@@ -32,7 +31,12 @@
           ><span class="the-shilla-shop">더신라숍</span
           ><span class="membership">멤버십</span>
         </div>
-      </div>  <!-- 우상단 끝 -->
+      </div>  <!-- 헤더 끝 --> 
+          <div class="h_wrap_copy">    
+            <div class="top-logo-2"></div>         
+      </div>  <!-- 헤더 카피 --> 
+
+    <div class="main-container">
       <div class="rectangle-7">  <!-- 예약창 시작  -->
         <span class="online-reservation"
           >새로워진 온라인 예약으로 빠르고 간편하게 예약 및 조회홰 보세요. </span
@@ -161,9 +165,9 @@
         <div class="rectangle-3e"></div>
         <span class="footer">footer</span>
       </div>  <!--  푸터 끝  -->
-      <div id="banner01"   class="banner01" style="display:block;">배너1</div> 
-      <div id="banner02"   class="banner02" style="display:none;">배너2</div>  
-     <div id="banner03"   class="banner03" style="display:none;">배너3</div>       
+      <div id="banner01"   class="banner01" style="display:block;"></div> 
+      <div id="banner02"   class="banner02" style="display:none;"></div>  
+     <div id="banner03"   class="banner03" style="display:none;"></div>       
       
       
       <!-- 배너  --> 
@@ -190,22 +194,10 @@
         ><span class="two">2</span><span class="zero">0</span
         ><span class="zero-4a">0</span>
       </div>  <!-- 예약창 끝 -->
-    </div>  <!--  바디 컨테이너 끝 -->
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script>
-$(function() {
-  let banners = ['#banner01', '#banner02', '#banner03'];
-  let idx = 0;
-  setInterval(function() {
-    let current = banners[idx];
-    let next = banners[(idx + 1) % banners.length];
-    $(current).fadeOut(2000, function() {
-      $(next).fadeIn(2000);
-    });
-    idx = (idx + 1) % banners.length;
-  }, 3000);
-});
-</script>
+    </div>  <!--  바디 컨테이너 끝 --> 
 
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="script/headerScroll.js"></script>
+    
   </body>
 </html>
