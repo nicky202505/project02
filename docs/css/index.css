@@ -43,22 +43,19 @@ button {
    position: absolute;
   width: 100%;
   height: 90px;
-  background: #f1e3c4;
+  background: #f1E3C4 ; 
   z-index: 10;
   }
   
 
   .h_wrap_copy{ 
-     display: none;
+  display: none;
   position: fixed;
   top: 0;
-  width: 100%;
+  width: 100%;  
   height: 60px;
   background:  #f1e3c4;
-  color: #fff;
-  z-index: 20000; 
-  text-align : center ;  
-
+  z-index: 20000;   
   }  
 
 
@@ -69,7 +66,6 @@ button {
   max-width: 1200px;
   height: 90px;
   margin: 0 auto ;  
-  background: #f1e3c4;
   z-index: 3;
 }
 
@@ -80,9 +76,6 @@ button {
   height: 35.604px;
   top: -0.99px;
   left: 1103px;
-  background: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-07-29/afmAukHove.png)
-    no-repeat center;
-  background-size: cover;
   z-index: 22;
 }
 
@@ -92,49 +85,46 @@ button {
   align-items: flex-start;
   justify-content: flex-start;
   position: absolute;
-  height: 17.802px;
-  top: 6.923px;
-  left: 62.694px;
-  color: #000000;  
-  font-family: Noto Sans, var(--default-font-family);
+  height: 18px;
+  top: 9px;
+  left: 60px;
+  color: #555;  
   font-size: 12px;
-  font-weight: 400;
-  line-height: 17.802px;
-  text-align: left;
+  font-weight: 600;
+  line-height: 18px;
+  text-align:right;
   white-space: nowrap;
   z-index: 23;
 }
 
 
-.group-2 {
-  position: absolute;
+.top-rewards  {
+  position: relative;
   width: 88px;
   height: 35.604px;
-  top: -0.99px;
-  left: 932px;
-  background: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-07-29/c21ATOd1OW.png)
-    no-repeat center;
-  background-size: cover;
-  z-index: 5;
-}
+/*   top: -0.99px;
+ */  left: 932px;
+  z-index: 5; 
+ }
 
 
 .shilla-rewards {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
-  position: absolute;
+  position: absolute; 
+  width : auto ; 
   height: 17.802px;
-  top: 7.912px;
-  left: 31px;
-  color: #000000;
-  font-family: Noto Sans, var(--default-font-family);
-  font-size: 12px;
-  font-weight: 400;
+  top: 9px;
+  left: 31px; 
+  font-size: 12px; 
   line-height: 17.802px;
   text-align: left;
   white-space: nowrap;
   z-index: 6;
+  color: #555;
+  font-size: 12px;
+  font-weight: 600;
 }
 
 
@@ -144,27 +134,26 @@ button {
   height: 35.604px;
   top: -0.99px;
   left: 1019px;
-  background: #d9d9d9;
-  border: 1px solid #d52121;
   z-index: 19;
-}
+}  
 
 
 .reservation-check {
   display: flex;
+  width : auto ; 
   align-items: flex-start;
   justify-content: flex-start;
   position: absolute;
-  height: 17.802px;
-  top: 8.89px;
-  left: 39px;
-  color: #000000;
-  font-family: Noto Sans, var(--default-font-family);
+  height: 18px;
+  top: 9px;
+  left: 50px;
+  color: #555;
   font-size: 12px;
-  font-weight: 400;
-  line-height: 17.802px;
-  text-align: left;
+  font-weight: 600;
+  line-height: 18px;
+  text-align: right ; 
   white-space: nowrap;
+  padding-left: 10px ;
   z-index: 20;
 }
 
@@ -175,8 +164,6 @@ button {
   height: 35.604px;
   top: -0.99px;
   left: 857px;
-  background: #d9d9d9;
-  border: 1px solid #d52121;
   z-index: 15;
 }
 
@@ -189,12 +176,11 @@ button {
   justify-content: flex-start;
   position: absolute;
   height: 17.802px;
-  top: 6.912px;
+  top: 9px;
   left: 41px;
-  color: #000000;
-  font-family: Noto Sans, var(--default-font-family);
+  color: #555;
   font-size: 12px;
-  font-weight: 400;
+  font-weight: 600; 
   line-height: 17.802px;
   text-align: left;
   white-space: nowrap;
@@ -212,17 +198,22 @@ button {
     no-repeat center;
   background-size: cover;
   z-index: 33;
-}
+}  
 
 
-.top-logo-2{
+
+
+
+.h_wrap_copy > .top-logo-2{
   position: absolute;
-  width: 200.887px;
-  height: 49.725px;
-  top: 19.643px;
-  left: 454.556px;   
-  background-size: cover;
-  z-index: 55;  
+  width: 100% ; 
+  height: 49px;
+  top: 7px; 
+  margin: auto ; 
+  background: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-07-29/nN7O1qzRUf.png)
+    no-repeat center;
+/*   background-size: cover;
+ */  z-index: 30000; 
 }
 
 .group-5 {
@@ -231,11 +222,18 @@ button {
   height: 50.44px;
   top: 38.571px;
   left: 0;
-  background: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-07-29/2JbF20EwX4.png)
-    no-repeat center;
-  background-size: cover;
   z-index: 26;
 }
+
+
+
+.search-icon {
+    width: 18px;   /* 아이콘 크기 조정 */
+    height: 18px;     
+} 
+
+
+
 .frame {
   display: flex;
   align-items: center;
@@ -247,30 +245,39 @@ button {
   margin: 16.813px 0 0 0;
   z-index: 27;
 }
+
 .hotel-search {
-  flex-shrink: 0;
-  flex-basis: auto;
-  position: relative;
-  height: 18px;
-  color: #000000;
-  font-family: Noto Sans, var(--default-font-family);
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 18px;
-  text-align: left;
-  white-space: nowrap;
-  z-index: 28;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    color: #555;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 18px;
+    white-space: nowrap; 
 }
-.rectangle-6 {
+
+
+.calender_box {
   position: absolute;
   width: 83px;
   height: 50.44px;
   top: 38.571px;
   left: 114px;
-  background: #d9d9d9;
-  border: 1px solid #d52121;
-  z-index: 31;
+  z-index: 31; 
+  color: #555;
+  font-size: 12px;
+  font-weight: 600;  
+  
+}  
+
+.calender{
+  width: 18px ; 
+  height : 18px ; 
+  padding-left : 8px ; 
 }
+
+
 .reservation-calendar {
   display: flex;
   align-items: flex-start;
@@ -280,65 +287,69 @@ button {
   top: 15.813px;
   left: -1px;
   color: #000000;
-  font-family: Noto Sans, var(--default-font-family);
-  font-size: 12px;
-  font-weight: 400;
+  font-size: 12px;  
   line-height: 17.802px;
   text-align: left;
   white-space: nowrap;
-  z-index: 32;
+  z-index: 32; 
+  color: #555;
+  font-size: 12px;
+  font-weight: 600;
 }
+
 .shilla-hotel-introduction {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
   position: absolute;
-  height: 17.802px;
+  height: 18px;
   top: 57.363px;
   left: 930px;
-  color: #000000;
-  font-family: Noto Sans, var(--default-font-family);
+  color: #555;
   font-size: 12px;
-  font-weight: 400;
-  line-height: 17.802px;
+  font-weight: 600;
+  line-height: 18px;
   text-align: left;
   white-space: nowrap;
   z-index: 9;
+
 }
 .the-shilla-shop {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
   position: absolute;
-  height: 17.802px;
+  height: 18px;
   top: 57.363px;
   left: 1154px;
-  color: #000000;
-  font-family: Noto Sans, var(--default-font-family);
+  color: #555 ; 
   font-size: 12px;
-  font-weight: 400;
-  line-height: 17.802px;
+  font-weight: 600;
+  line-height: 18px;
   text-align: left;
   white-space: nowrap;
-  z-index: 12;
+  z-index: 12; 
 }
+
 .membership {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
   position: absolute;
-  height: 17.802px;
+  height: 18px;
   top: 57.363px;
   left: 1049px;
-  color: #000000;
-  font-family: Noto Sans, var(--default-font-family);
+  color: #555; 
   font-size: 12px;
-  font-weight: 400;
-  line-height: 17.802px;
+  font-weight: 600;
+  line-height: 18px;
   text-align: left;
   white-space: nowrap;
   z-index: 10;
+  padding-left: 20px ;
 }
+
+
 .rectangle-7 {
   position: relative;
   width: 1194px;
@@ -356,10 +367,9 @@ button {
   height: 18px;
   top: 46px;
   left: 40px;
-  color: #767676;
-  font-family: Noto Sans, var(--default-font-family);
+  color: #767676 ; 
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 400 ; 
   line-height: 18px;
   text-align: left;
   white-space: nowrap;
@@ -374,7 +384,6 @@ button {
   top: 46px;
   left: 993px;
   color: #767676;
-  font-family: Noto Sans, var(--default-font-family);
   font-size: 16px;
   font-weight: 400;
   line-height: 18px;
@@ -462,15 +471,17 @@ button {
   height: 44px;
   top: 0;
   left: 0;
-  color: #555555;
-  font-family: Source Serif Pro, var(--default-font-family);
+  color: #555555; 
+  font-family: 'NanumJejuMyeongjo', serif; 
   font-size: 36px;
-  font-weight: 200;
+  font-weight: 500;
   line-height: 44px;
   text-align: center;
   white-space: nowrap;
   z-index: 86;
 }
+
+
 .special-offer-10 {
   display: flex;
   align-items: flex-start;
@@ -480,14 +491,16 @@ button {
   height: 20px;
   margin: 16px 0 0 31px;
   color: #555555;
-  font-family: Spectral, var(--default-font-family);
+  font-family:serif ;  
   font-size: 16px;
-  font-weight: 300;
+  font-weight: 500;
   line-height: 20px;
   text-align: center;
   white-space: nowrap;
   z-index: 87;
+  letter-spacing: 3px ;
 }
+
 .group-11 {
   position: relative;
   width: 1196px;
@@ -646,7 +659,7 @@ button {
   height: 44px;
   margin: 0 0 0 0;
   color: #555555;
-  font-family: Source Serif Pro, var(--default-font-family);
+  font-family: 'NanumJejuMyeongjo', serif; 
   font-size: 36px;
   font-weight: 200;
   line-height: 44px;
@@ -654,6 +667,7 @@ button {
   white-space: nowrap;
   z-index: 133;
 }
+
 .shilla-membership {
   display: flex;
   align-items: flex-start;
@@ -663,13 +677,16 @@ button {
   height: 20px;
   margin: 15px 0 0 20px;
   color: #555555;
-  font-family: Spectral, var(--default-font-family);
+  font-family: serif ; 
   font-size: 16px;
   font-weight: 300;
   line-height: 20px;
   text-align: center;
   white-space: nowrap;
-  z-index: 134;
+  z-index: 134; 
+  letter-spacing: 3px ;
+
+
 }
 .group-1f {
   position: absolute;
@@ -683,7 +700,6 @@ button {
 .shilla-es {
   display: flex;
   align-items: flex-start;
-  justify-content: center;
   position: relative;
   width: 482px;
   height: 24px;
@@ -692,29 +708,11 @@ button {
   font-family: Spectral, var(--default-font-family);
   font-size: 16px;
   font-weight: 300;
-  line-height: 24px;
-  text-align: center;
+  line-height: 24px; 
   white-space: nowrap;
   z-index: 137;
 }
-.membership-details {
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  position: relative;
-  width: 482px;
-  height: 48px;
-  margin: 4px 0 0 0;
-  color: #000000;
-  font-family: Spectral, var(--default-font-family);
-  font-size: 16px;
-  font-weight: 300;
-  line-height: 24px;
-  text-align: left;
-  text-overflow: initial;
-  z-index: 138;
-  overflow: hidden;
-}
+
 .es-anniversary-event {
   display: flex;
   align-items: flex-start;
@@ -733,16 +731,31 @@ button {
   z-index: 139;
 }
 .frame-20 {
+  position: relative ; 
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   flex-wrap: nowrap;
   gap: 10px;
-  position: relative;
   width: 1200px;
   margin: 130px 0 0 362px;
-  z-index: 92;
+  z-index: 92;  
+  height : auto; 
 }
+
+.bottom-text-box {
+    position: absolute;
+    left: 32px ;
+    bottom: 32px;
+    width: 730px;
+    height: 56px;
+    color: #101010;
+    font-size: 16px;
+    line-height: 24px;
+    z-index: 100;   
+} 
+
+
 .group-21 {
   flex-shrink: 0;
   position: relative;
@@ -778,9 +791,9 @@ button {
   height: 44px;
   margin: 0 0 0 0;
   color: #555555;
-  font-family: Source Serif Pro, var(--default-font-family);
+   font-family: 'NanumJejuMyeongjo', serif; 
   font-size: 36px;
-  font-weight: 200;
+  font-weight: 500;
   line-height: 44px;
   text-align: center;
   white-space: nowrap;
@@ -794,14 +807,15 @@ button {
   width: 215px;
   height: 20px;
   margin: 15px 0 0 20px;
-  color: #555555;
-  font-family: Spectral, var(--default-font-family);
-  font-size: 16px;
-  font-weight: 300;
+  color: #555555; 
+  font-family: serif;  
+  font-size: 16px ; 
+  font-weight:300;
   line-height: 20px;
-  text-align: center;
-  white-space: nowrap;
-  z-index: 114;
+  text-align:center;
+  white-space:nowrap;
+  z-index: 114; 
+  letter-spacing: 3px ; 
 }
 .group-26 {
   position: absolute;
@@ -845,13 +859,11 @@ button {
 .member-exclusive-products {
   display: flex;
   align-items: flex-start;
-  justify-content: center;
   position: relative;
   width: 121px;
   height: 20px;
   margin: 0 0 0 0;
   color: #000000;
-  font-family: Spectral, var(--default-font-family);
   font-size: 20px;
   font-weight: 300;
   line-height: 20px;
@@ -868,20 +880,19 @@ button {
 }
 .products-and-events-for-members {
   display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
+/*   align-items: flex-start;
+  justify-content: flex-start; */
   position: absolute;
   height: 20px;
   top: 0;
-  left: 0;
+  left: 0 ; 
   color: #000000;
-  font-family: Spectral, var(--default-font-family);
   font-size: 12px;
   font-weight: 300;
   line-height: 20px;
-  text-align: left;
-  white-space: nowrap;
-  z-index: 100;
+  text-align: left;  
+  z-index: 100; 
+  padding: 0 ; 
 }
 .frame-2b {
   display: flex;
@@ -905,18 +916,15 @@ button {
 }
 .shilla-rewards-benefit {
   display: flex;
-  align-items: flex-start;
-  justify-content: center;
+  align-items: flex-start;  
   position: relative;
   width: 139px;
   height: 20px;
   margin: 0 0 0 0;
   color: #000000;
-  font-family: Spectral, var(--default-font-family);
   font-size: 20px;
   font-weight: 300;
   line-height: 20px;
-  text-align: center;
   white-space: nowrap;
   z-index: 103;
 }
@@ -945,7 +953,6 @@ button {
 .shilla-rewards-points {
   display: flex;
   align-items: flex-start;
-  justify-content: center;
   position: relative;
   width: 158px;
   height: 20px;
@@ -972,7 +979,33 @@ button {
   text-align: left;
   white-space: nowrap;
   z-index: 107;
+} 
+
+.div-frame {
+  position: relative;
+  width: 726px;
+  height: auto ; 
+  margin: 50px 0 0 0;
+  z-index: 26; 
 }
+
+.shilla-rewards-7 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  width: 726px;
+  height: auto ; 
+  top: 0;
+  left: 0;
+  color: #101010;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 28px;
+  text-align: left; 
+  z-index: 27;  
+}
+
 .group-2e {
   position: absolute;
   width: 113px;
@@ -1003,7 +1036,6 @@ button {
   top: 0;
   left: 0;
   background: #3e2b2c;
-  border: 1px solid #811515;
   z-index: 109;
 }
 .frame-30 {
@@ -1093,7 +1125,7 @@ button {
   height: 44px;
   margin: 0 0 0 0;
   color: #555555;
-  font-family: Source Serif Pro, var(--default-font-family);
+    font-family: 'NanumJejuMyeongjo', serif; 
   font-size: 36px;
   font-weight: 200;
   line-height: 44px;
@@ -1110,14 +1142,17 @@ button {
   height: 20px;
   margin: 15px 0 0 20px;
   color: #555555;
-  font-family: Spectral, var(--default-font-family);
+  font-family: serif ; 
   font-size: 16px;
   font-weight: 300;
   line-height: 20px;
   text-align: center;
   white-space: nowrap;
   z-index: 127;
+  letter-spacing: 3px ;
 }
+
+
 .flex-row-c {
   position: relative;
   width: 1200px;
@@ -1126,48 +1161,59 @@ button {
   z-index: 120;
 }
 .rectangle-39 {
-  position: absolute;
+  position: relative;
   width: 1200px;
-  height: 720px;
+  height: 680px;
   top: 0;
   left: 50%;
-  background: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-07-29/W8n1T1BFBA.png)
-    no-repeat center;
-  background-size: cover;
   transform: translate(-50%, 0);
   z-index: 118;
 }
-.rectangle-3a {
-  position: absolute;
-  width: 958px;
-  height: 23px;
-  top: 0;
-  left: 0;
-  background: #d9d9d9;
-  border: 1px solid #b72121;
-  z-index: 119;
+
+.rectangle-39 iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
 }
-.rectangle-3b {
-  position: absolute;
-  width: 200px;
-  height: 25px;
-  top: 0;
-  left: 998px;
-  background: #d9d9d9;
-  border: 1px solid #dd1e1e;
-  z-index: 120;
+
+
+
+
+.footbox01{
+  width : 100% ;   
+  height : 170px ; 
+  background-color: #f1E3C4  ; 
 }
-.frame-3c {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  flex-wrap: nowrap;
-  position: relative;
-  width: 1920px;
-  margin: 149px 0 0 0;
-  z-index: 88;
+
+.foot01{
+  width : 100% ; 
+  max-width : 1200px ;  
+   height : 170px ; 
+  margin : auto ; 
+  color : #101010 ;  
+  border: 1px red solid;
+
 }
-.rectangle-3d {
+
+.footbox02{
+  width : 100% ;   
+  height : 183px ; }
+
+
+
+.foot02 {
+  width : 1200px ; 
+  height : 183px ; 
+  margin : auto ; 
+  border: 1px red solid;
+}
+
+
+
+
+
+
+/* .rectangle-3d { 
   align-self: stretch;
   flex-shrink: 0;
   position: relative;
@@ -1175,7 +1221,31 @@ button {
   height: 167px;
   background: #f1e3c4;
   z-index: 89;
-}
+}  
+ */
+
+
+/* .frame-3c {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: nowrap;
+  position: relative;
+  margin: 149px 0 0 0;
+  z-index: 88;
+}  */
+
+/* .rectangle-3d { 
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+  min-width: 0;
+  height: 167px;
+  background: #f1e3c4;
+  z-index: 89;
+} */
+
+
 .rectangle-3e {
   flex-shrink: 0;
   position: relative;
@@ -1196,7 +1266,6 @@ button {
   top: 75px;
   left: 987px;
   color: #000000;
-  font-family: Noto Sans, var(--default-font-family);
   font-size: 40px;
   font-weight: 400;
   line-height: 18px;
@@ -1204,6 +1273,33 @@ button {
   white-space: nowrap;
   z-index: 91;
 }
+
+
+.banner04{ 
+  position: absolute;
+  width: 1920px;
+  height: 650px;
+  top: 90px;
+  left: 0;
+  background : url(../images/banner4.jpg) no-repeat center;     
+  background-size: cover;  
+    margin: auto ; 
+   z-index: 1;  
+ }
+
+ .banner05{
+   position: absolute;
+  width: 1920px;
+  height: 650px;
+  top: 90px;
+  left: 0;
+  background : url(../images/banner5.jpg) no-repeat center;     
+  background-size: cover;  
+  margin: auto ; 
+  z-index: 1;   
+}
+
+
 .banner01  {
   position: absolute;
   width: 1920px;
@@ -1241,43 +1337,49 @@ button {
    z-index: 1; 
  }
 
+ 
+ /* 예약창  */   
 
 .group-40 {
-  position: absolute;
+  position: absolute ; 
+  width : 1200px ; 
   height: 100px;
   top: 740px;
   right: 358px;
   left: 359px;
-    background: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-07-29/OLft3OOrkS.png)
-    no-repeat center;
+  background: #fff ; 
   background-size: cover ; 
- */  z-index: 38;
- */}   /* 예약창  */    
+  z-index: 38;  
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+ }   
 
+ .search_box{
+  position : absolute ; 
+  right: 0;
+  bottom: 0;
+  height : 60px; 
+  width :  135px ; 
+  background-color: #3E2B2C ; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ 
 .search {
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  position: absolute;
-  height: 24px;
-  top: 58px;
-  left: 1119px;
-  color: #ffffff;
-  font-family: Noto Sans, var(--default-font-family);
+  color : white ; 
   font-size: 18px;
-  font-weight: 400;
-  line-height: 24px;
-  text-align: left;
-  white-space: nowrap;
-  z-index: 39;
+  font-weight: 600;
+  line-height: 24px;   
 }
+
+
+
 .rectangle-41 {
   position: absolute;
   width: 977px;
   height: 60px;
   top: 783px;
   left: 362px;
-   background: #d9d9d9;
    z-index: 40;  /* 예약창  */
 }
 .hotel-city {
@@ -1288,8 +1390,7 @@ button {
   height: 24px;
   top: -1px;
   left: 0;
-  color: #161616;
-  font-family: Noto Sans, var(--default-font-family);
+  color: #101010;
   font-size: 12px;
   font-weight: 400;
   line-height: 24px;
@@ -1299,18 +1400,19 @@ button {
 }
 .check-in {
   display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  position: absolute;
+/* /*   align-items: flex-start;
+ */  
+/*  justify-content: center ; 
+ */   
+ position: absolute;
   height: 24px;
   top: -1px;
   left: 260px;
-  color: #161616;
-  font-family: Noto Sans, var(--default-font-family);
+  color: #101010; 
   font-size: 12px;
   font-weight: 400;
   line-height: 24px;
-  text-align: left;
+  text-align: center ; 
   white-space: nowrap;
   z-index: 58;
 }
@@ -1322,8 +1424,7 @@ button {
   height: 24px;
   top: -1px;
   left: 855px;
-  color: #161616;
-  font-family: Noto Sans, var(--default-font-family);
+  color: #101010; 
   font-size: 12px;
   font-weight: 400;
   line-height: 24px;
@@ -1339,8 +1440,7 @@ button {
   height: 24px;
   top: -1px;
   left: 767px;
-  color: #161616;
-  font-family: Noto Sans, var(--default-font-family);
+  color: #101010; 
   font-size: 12px;
   font-weight: 400;
   line-height: 24px;
@@ -1356,8 +1456,7 @@ button {
   height: 24px;
   top: 0;
   left: 527px;
-  color: #161616;
-  font-family: Noto Sans, var(--default-font-family);
+  color:#101010; 
   font-size: 12px;
   font-weight: 400;
   line-height: 24px;
@@ -1373,8 +1472,7 @@ button {
   height: 24px;
   top: 0;
   left: 672px;
-  color: #161616;
-  font-family: Noto Sans, var(--default-font-family);
+  color: #101010; 
   font-size: 12px;
   font-weight: 400;
   line-height: 24px;
@@ -1390,8 +1488,7 @@ button {
   height: 24px;
   top: 0;
   left: 946px;
-  color: #161616;
-  font-family: Noto Sans, var(--default-font-family);
+  color: #101010; 
   font-size: 12px;
   font-weight: 400;
   line-height: 24px;
@@ -1405,9 +1502,6 @@ button {
   height: 56px;
   top: 1px;
   left: 260px;
-  background: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-07-29/YhQKqf51RJ.png)
-    no-repeat center;
-  background-size: cover;
   z-index: 48;
 }
 .group-43 {
@@ -1416,9 +1510,6 @@ button {
   height: 55px;
   top: 2px;
   left: 0;
-  background: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-07-29/pqbeB21EA7.png)
-    no-repeat center;
-  background-size: cover;
   z-index: 41;
 }
 .group-44 {
@@ -1427,9 +1518,6 @@ button {
   height: 55px;
   top: 2px;
   left: 527px;
-  background: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-07-29/h6zt17kuG1.png)
-    no-repeat center;
-  background-size: cover;
   z-index: 42;
 }
 .group-45 {
@@ -1438,11 +1526,15 @@ button {
   height: 55px;
   top: 2px;
   left: 421px;
-  background: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-07-29/c7pFQ93frg.png)
-    no-repeat center;
-  background-size: cover;
   z-index: 47;
+}  
+
+.night {
+  width : 30px ; 
+  height : 30px ;    
 }
+
+
 .rectangle-46 {
   position: absolute;
   width: 36px;
@@ -1454,16 +1546,14 @@ button {
   background-size: cover;
   z-index: 45;
 }
+
 .rectangle-47 {
   position: absolute;
   width: 36px;
   height: 55px;
   top: 2px;
   left: 941px;
-  background: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-07-29/1vSR4mHnbw.png)
-    no-repeat center;
-  background-size: cover;
-  z-index: 46;
+   z-index: 46;  
 }
 .rectangle-48 {
   position: absolute;
@@ -1471,9 +1561,6 @@ button {
   height: 55px;
   top: 2px;
   left: 672px;
-  background: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-07-29/sQQQ8nes2J.png)
-    no-repeat center;
-  background-size: cover;
   z-index: 43;
 }
 .rectangle-49 {
@@ -1482,11 +1569,9 @@ button {
   height: 55px;
   top: 2px;
   left: 766px;
-  background: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-07-29/3X6xBTQAUY.png)
-    no-repeat center;
-  background-size: cover;
   z-index: 44;
 }
+
 .select-hotel {
   display: flex;
   align-items: flex-start;
@@ -1495,27 +1580,34 @@ button {
   height: 24px;
   top: 35px;
   left: 0;
-  color: #161616;
-  font-family: Noto Sans, var(--default-font-family);
+  color: #333; 
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 600;
   line-height: 24px;
   text-align: left;
   white-space: nowrap;
-  z-index: 50;
+  z-index: 50;  
+
 }
+
+.search-icon-2{
+  width : 20px ; 
+  height : 20px ;  
+  margin-left: 30px ;
+}
+
+
 .date-mon {
   display: flex;
   align-items: flex-start;
-  justify-content: flex-start;
+  justify-content: center ; 
   position: absolute;
   height: 24px;
   top: 35px;
   left: 260px;
-  color: #161616;
-  font-family: Noto Sans, var(--default-font-family);
+ color: #333; 
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 600;
   line-height: 24px;
   text-align: left;
   white-space: nowrap;
@@ -1529,10 +1621,9 @@ button {
   height: 24px;
   top: 35px;
   left: 527px;
-  color: #161616;
-  font-family: Noto Sans, var(--default-font-family);
+  color: #333; 
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 600;
   line-height: 24px;
   text-align: left;
   white-space: nowrap;
@@ -1546,10 +1637,9 @@ button {
   height: 24px;
   top: 35px;
   left: 421px;
-  color: #161616;
-  font-family: Noto Sans, var(--default-font-family);
+  color: #333; 
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 600;
   line-height: 24px;
   text-align: left;
   white-space: nowrap;
@@ -1563,10 +1653,9 @@ button {
   height: 24px;
   top: 35px;
   left: 679px;
-  color: #161616;
-  font-family: Noto Sans, var(--default-font-family);
+  color: #333; 
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 600;
   line-height: 24px;
   text-align: left;
   white-space: nowrap;
@@ -1580,10 +1669,9 @@ button {
   height: 24px;
   top: 35px;
   left: 774px;
-  color: #161616;
-  font-family: Noto Sans, var(--default-font-family);
+  color: #333; 
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 600;
   line-height: 24px;
   text-align: left;
   white-space: nowrap;
@@ -1597,10 +1685,9 @@ button {
   height: 24px;
   top: 35px;
   left: 867px;
-  color: #161616;
-  font-family: Noto Sans, var(--default-font-family);
+  color: #333; 
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 600;
   line-height: 24px;
   text-align: left;
   white-space: nowrap;
@@ -1614,10 +1701,9 @@ button {
   height: 24px;
   top: 35px;
   left: 953px;
-  color: #161616;
-  font-family: Noto Sans, var(--default-font-family);
+  color: #333; 
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 600;
   line-height: 24px;
   text-align: left;
   white-space: nowrap;

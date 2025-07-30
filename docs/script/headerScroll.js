@@ -16,7 +16,7 @@ $(function() {
 
 
 $(function() {
-  let banners = ['#banner01', '#banner02', '#banner03'];
+  let banners = ['#banner04', '#banner05', '#banner01', '#banner02', '#banner03'];
   let idx = 0;
   setInterval(function() {
     let current = banners[idx];
