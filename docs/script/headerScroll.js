@@ -27,3 +27,15 @@ $(function() {
     idx = (idx + 1) % banners.length;
   }, 3000);
 });
+
+
+document.querySelectorAll('.banner04, .banner05, .banner01, .banner02, .banner03').forEach(function(el) {
+    el.style.cursor = 'pointer';
+    el.addEventListener('click', function() {
+        window.location.href = '#';
+    });
+});
+
+
+
+
