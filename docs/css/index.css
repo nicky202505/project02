@@ -353,10 +353,11 @@ button {
 .rectangle-7 {
   position: relative;
   width: 1194px;
-  height: 111px;
+  height: 110px;
   margin: 853px 0 0 363px;
   background: #f2f2f2;
-  z-index: 67;   
+  z-index: 67;    
+  vertical-align: center;  
 }
 
 .online-reservation {
@@ -370,7 +371,7 @@ button {
   color: #767676 ; 
   font-size: 16px;
   font-weight: 400 ; 
-  line-height: 18px;
+  line-height: 18px ; 
   text-align: left;
   white-space: nowrap;
   z-index: 68;
@@ -383,7 +384,7 @@ button {
   height: 18px;
   top: 46px;
   left: 993px;
-  color: #767676;
+  color: #767676 ; 
   font-size: 16px;
   font-weight: 400;
   line-height: 18px;
@@ -661,7 +662,7 @@ button {
   color: #555555;
   font-family: 'NanumJejuMyeongjo', serif; 
   font-size: 36px;
-  font-weight: 200;
+  font-weight: 600;
   line-height: 44px;
   text-align: center;
   white-space: nowrap;
@@ -1127,7 +1128,7 @@ button {
   color: #555555;
     font-family: 'NanumJejuMyeongjo', serif; 
   font-size: 36px;
-  font-weight: 200;
+  font-weight: 600;
   line-height: 44px;
   text-align: center;
   white-space: nowrap;
@@ -1163,7 +1164,8 @@ button {
 .rectangle-39 {
   position: relative;
   width: 1200px;
-  height: 680px;
+  height: 680px; 
+  font-weight : 600 ; 
   top: 0;
   left: 50%;
   transform: translate(-50%, 0);
@@ -1182,30 +1184,34 @@ button {
 .footbox01{
   width : 100% ;   
   height : 170px ; 
-  background-color: #f1E3C4  ; 
+  background-color:  #f1ebd6   ; 
+  
 }
 
 .foot01{
   width : 100% ; 
-  max-width : 1200px ;  
+  max-width : 1210px ;  
    height : 170px ; 
   margin : auto ; 
   color : #101010 ;  
-  border: 1px red solid;
+  background: url(../images/footershot01.png)  no-repeat ;   
+  background-size: cover;   
+
 
 }
 
 .footbox02{
   width : 100% ;   
-  height : 183px ; }
+  height : 183px ; }  
 
 
 
 .foot02 {
-  width : 1200px ; 
+  width : 1210px ; 
   height : 183px ; 
   margin : auto ; 
-  border: 1px red solid;
+  background: url(../images/footshot02.png) no-repeat;
+  background-size: cover;
 }
 
 
@@ -1530,8 +1536,8 @@ button {
 }  
 
 .night {
-  width : 30px ; 
-  height : 30px ;    
+  width : 25px ; 
+  height : 25px ;     
 }
 
 
