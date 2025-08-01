@@ -363,11 +363,12 @@ button {
 .rectangle-7 {
   position: relative;
   width: 1194px;
-  height: 110px;
+  height: 80px;
   margin: 853px 0 0 363px;
   background: #f2f2f2;
   z-index: 67;    
-  vertical-align: center;  
+  vertical-align: center;   
+  align-items: center;
 }
 
 .online-reservation {
@@ -376,8 +377,9 @@ button {
   justify-content: flex-start;
   position: absolute;
   height: 18px;
-  top: 46px;
-  left: 40px;
+  left: 40px; 
+  top : 40px; 
+  transform: translateY(-50%);
   color: #767676 ; 
   font-size: 16px;
   font-weight: 400 ; 
@@ -392,7 +394,8 @@ button {
   justify-content: flex-start;
   position: absolute;
   height: 18px;
-  top: 46px;
+  top : 40px; 
+  transform: translateY(-50%);
   left: 993px;
   color: #767676 ; 
   font-size: 16px;
@@ -400,7 +403,8 @@ button {
   line-height: 18px;
   text-align: left;
   white-space: nowrap;
-  z-index: 69;
+  z-index: 68 ;  
+  text-decoration: underline;
 }
 .frame-8 {
   display: flex;
@@ -501,8 +505,8 @@ button {
     bottom: 0;
     transform: translateX(-50%);
     width: 200px;      /* 가운데 부분 길이 */
-    height: 4px;      /* 선 두께 */
-    box-shadow: 0px 3px 8px rgba(66, 52, 52, 0.37);/* 연한 그림자 */
+    height: 0.3px;      /* 선 두께 */
+    box-shadow: 0px 2px 2px rgb(240, 170, 170) ;   /* 연한 그림자 */
     background: transparent;
     border-radius: 2px;
     pointer-events: none;
@@ -992,14 +996,16 @@ button {
   text-align: center;
   white-space: nowrap;
   z-index: 106;
-}
+} 
+
+
 .points-like-cash {
   display: block;
   position: relative;
   height: 20px;
   margin: 4px 0 0 0;
   color: #000000;
-  font-family: Spectral, var(--default-font-family);
+
   font-size: 12px;
   font-weight: 300;
   line-height: 20px;
@@ -1163,14 +1169,14 @@ button {
 }
 
 .gallery::after {
-    content: "";
+    content: ""; 
     position: absolute;
     left: 50%;
     bottom: 0;
     transform: translateX(-50%);
     width: 200px;      /* 가운데 부분 길이 */
-    height: 4px;      /* 선 두께 */
-    box-shadow: 0px 3px 8px rgba(66, 52, 52, 0.37);/* 연한 그림자 */ /* 연한 그림자 */
+    height: 0.3px;      /* 선 두께 */
+    box-shadow: 0px 2px 2px rgb(240, 170, 170) ;   /* 연한 그림자 */
     background: transparent;
     border-radius: 2px;
     pointer-events: none;
@@ -1452,14 +1458,56 @@ button {
 
 
 
-.rectangle-41 {
+ .rectangle-41 {
   position: absolute;
   width: 977px;
   height: 60px;
   top: 783px;
   left: 362px;
-   z-index: 40;  /* 예약창  */
+   z-index: 40;  }
+ 
+
+
+
+.table{
+  border-collapse: collapse ;  
+  width : 960px ;  
+  text-align: center; 
+  margin-left : 0 ; 
+  margin-bottom: 3px;
 }
+
+
+
+.table tr:first-child td {
+    font-size: 12px;
+}  
+
+.table tr:first-child td:first-child {
+    text-align: left; 
+    padding: 0;
+}
+
+.table tr:nth-child(2) td {
+    font-size: 16px;
+} 
+
+.table tr:nth-child(2) td:first-child {
+  text-align: left; 
+    padding : 0 ;   
+    position : relative ;    
+}  
+
+.h-search{
+  width : 20px ; 
+  height : 20px ; 
+  padding-left : 20px ; 
+} 
+
+
+
+
+
 .hotel-city {
   display: flex;
   align-items: flex-start;
