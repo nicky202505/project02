@@ -215,15 +215,13 @@ button {
 
 
 .h_wrap_copy > .top-logo-2{
-  position: absolute;
-  width: 100% ; 
+  position: relative;
+  width: 100% ;  
+  max-width: 200px; 
   height: 49px;
   top: 7px; 
-  margin: auto ; 
-  background: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-07-29/nN7O1qzRUf.png)
-    no-repeat center;
-/*   background-size: cover;
- */  z-index: 30000; 
+  margin: auto ;  
+  z-index: 30000; 
 }
 
 .group-5 {
@@ -279,7 +277,11 @@ button {
   font-size: 16px;
   font-weight: 600;  
   
-}  
+}   
+
+iframe{
+  border : 0 ; 
+}
 
 .calender{
   width: 18px ; 
@@ -287,7 +289,19 @@ button {
   padding-left : 8px ; 
 }
 
+.language-select {
+    padding: 9px 10px;
+    font-size: 12px;
+    background: #f1E3C4 ;      
+    color: #222;
+    outline: none;
+    transition: border 0.2s; 
+    border : 0.5px solid #f1E3C4 ;   
+}
 
+.language-select:focus {
+   background:    #f1E3C4 ;     
+ }
 .reservation-calendar {
   display: flex;
   align-items: flex-start;
@@ -1397,7 +1411,7 @@ button {
   background-size: cover;  
   margin: auto ; 
   z-index: 1;
- */}   
+ }   
 
 .banner02{ 
   position: absolute;
@@ -1406,8 +1420,8 @@ button {
   left: 0;
   background : url(../images/banner2.jpg) no-repeat center;     
   background-size: cover; 
-  margin: auto ;  
- z-index: ;   
+  margin: auto ;      
+   z-index: 1; 
  }
 
 .banner03{ 
