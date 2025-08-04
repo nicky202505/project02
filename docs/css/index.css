@@ -750,7 +750,6 @@ iframe{
   height: 24px;
   margin: 0 0 0 0;
   color: #000000;
-  font-family: Spectral, var(--default-font-family);
   font-size: 16px;
   font-weight: 300;
   line-height: 24px; 
@@ -766,8 +765,7 @@ iframe{
   height: 24px;
   top: 319px;
   left: 643px;
-  color: #000000;
-  font-family: Spectral, var(--default-font-family);
+  color: #000000; 
   font-size: 16px;
   font-weight: 300;
   line-height: 24px;
@@ -978,8 +976,7 @@ iframe{
   position: relative;
   height: 20px;
   margin: 4px 0 0 0;
-  color: #000000;
-  font-family: Spectral, var(--default-font-family);
+  color: #000000; 
   font-size: 12px;
   font-weight: 300;
   line-height: 20px;
@@ -1002,8 +999,7 @@ iframe{
   width: 158px;
   height: 20px;
   margin: 0 0 0 0;
-  color: #000000;
-  font-family: Spectral, var(--default-font-family);
+  color: #000000; 
   font-size: 20px;
   font-weight: 300;
   line-height: 20px;
@@ -1068,7 +1064,6 @@ iframe{
   height: 28px;
   margin: 4px 0 0 28px;
   color: #ffffff;
-  font-family: Spectral, var(--default-font-family);
   font-size: 16px;
   font-weight: 300;
   line-height: 28px;

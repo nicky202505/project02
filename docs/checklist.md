@@ -51,14 +51,14 @@ https://frontendchecklist.io/
 
 HTML 유효성 검사 
 
-\<a href="[https://validator.w3.org/check?uri=내](https://validator.w3.org/check?uri=내)프로젝트1URL/"\>\<img src="https://user-images.githubusercontent.com/59301948/210939606-50ea4ba6-6817-45df-b5af-e220ab606c5b.png" alt="유효성검사"\>\</a\>
+<a href="https://validator.w3.org/check?uri=https://validator.w3.org/check?uri=https://nicky202505.github.io/project02/"\>\<img src="https://user-images.githubusercontent.com/59301948/210939606-50ea4ba6-6817-45df-b5af-e220ab606c5b.png" alt="유효성검사"\>\</a\>
 
 CSS 유효성 검사 
 
 \<a href="https://jigsaw.w3.org/css-validator/validator?uri=내프로젝트주소"\>\<img src="https://jigsaw.w3.org/css-validator/images/vcss" alt="유효성검사"\>\</a\>
 
 작성예시   
-\<a href="https://validator.w3.org/check?uri=mangopub.cafe24.com"\>\<img src="https://www.w3.org/Icons/valid-html401" alt=""\>\</a\> \<a href="https://jigsaw.w3.org/css-validator/validator?uri=mangopub.cafe24.com"\>\<img 
+\<a href="https://validator.w3.org/check?uri=https://nicky202505.github.io/project02\>\<img src="https://www.w3.org/Icons/valid-html401" alt=""\>\</a\> \<a href="https://jigsaw.w3.org/css-validator/validator?uri=mangopub.cafe24.com"\>\<img 
 
 src="https://jigsaw.w3.org/css-validator/images/vcss" alt=""\>\</a\>
 
