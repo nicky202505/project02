@@ -14,21 +14,17 @@
 body, .main-container{
   margin : 0 ; 
   padding : 0 ; 
-/*   overflow: hidden;  */
-
 }
 
 
 .main-container {
   position : relative ; 
-/*    overflow: hidden; 
- */  
+  
 }
 
 .main-container,
 .main-container * {
-/*   box-sizing: border-box;
- */}
+}
 
 input,
 select,
@@ -204,7 +200,7 @@ button {
   height: 49.725px;
   top: 19.643px;
   left: 454.556px;
-  background: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-07-29/nN7O1qzRUf.png)
+  background: url(../images/top_logo.gif)
     no-repeat center;
   background-size: cover;
   z-index: 33;
@@ -298,6 +294,9 @@ iframe{
     transition: border 0.2s; 
     border : 0.5px solid #f1E3C4 ;   
 }
+
+
+
 
 .language-select:focus {
    background:    #f1E3C4 ;     
@@ -583,7 +582,7 @@ iframe{
   height: 354px;
   top: 0;
   left: 0;
-  background: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-07-29/q2ZNJqYLEK.png)
+  background: url(../images/table.png)
     no-repeat center;
   background-size: cover;
   z-index: 78;
@@ -594,7 +593,7 @@ iframe{
   height: 260px;
   top: 0;
   left: 812px;
-  background: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-07-29/cJ9TCkH97O.png)
+  background: url(../images/parm.jpg)
     no-repeat center;
   background-size: cover;
   z-index: 79;
@@ -613,7 +612,7 @@ iframe{
   height: 354px;
   top: 0;
   left: 814px;
-  background: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-07-29/Ouy4Tgcn7y.png)
+  background: url(../images/phone.jpg)
     no-repeat center;
   background-size: cover;
   z-index: 80;
@@ -624,7 +623,7 @@ iframe{
   height: 260px;
   top: 94px;
   left: 0;
-  background: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-07-29/b2x9biWfR1.png)
+  background: url(../images/land.jpg)
     no-repeat center;
   background-size: cover;
   z-index: 76;
@@ -635,8 +634,8 @@ iframe{
   height: 260px;
   top: 94px;
   left: 407px;
-  background: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-07-29/6f6BNTTKTc.png)
-    no-repeat center;
+  background: url(../images/gallery05.jpg)
+    no-repeat ;
   background-size: cover;
   z-index: 77;
 }
@@ -681,11 +680,12 @@ iframe{
   height: 360px;
   top: 0px;
   left: 0;
-  background: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-07-29/fWk6peW9CC.png)
-    no-repeat center;
+  background: url(../images/mcard.png) 
+    no-repeat ;  
   background-size: cover;
-  z-index: 130;
+  z-index: 400;
 }
+
 .group-1e {
   position: absolute;
   width: 256px;
@@ -885,7 +885,7 @@ iframe{
   height: 135px;
   top: 184px;
   left: 913px;
-  background: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-07-29/syFWLJMLcx.png)
+  background: url(../images/rwCard.png)
     no-repeat center;
   background-size: cover;
   z-index: 96;
@@ -1168,7 +1168,7 @@ iframe{
   height: 44px;
   margin: 0 0 0 0;
   color: #555555;
-    font-family: 'NanumJejuMyeongjo', serif; 
+  font-family: 'NanumJejuMyeongjo', serif; 
   font-size: 36px;
   font-weight: 600;
   line-height: 44px;
@@ -1248,18 +1248,132 @@ iframe{
 .foot01{
   width : 100% ; 
   max-width : 1210px ;  
-   height : 170px ; 
+  height : 170px ; 
   margin : auto ; 
   color : #101010 ;  
-  background: url(../images/footershot01.png)  no-repeat ;   
-  background-size: cover;   
+
+ display : grid ; 
+ grid-template-columns: 230px 230px 230px 230px ; 
+ grid-template-rows: 68px 100px ; 
+} 
+
+.ci_bottom {
+  grid-column: 1/2;
+  grid-row: 1/-1;   
+  margin : 40px 20px ;   ;  
+  width : 200px ;   
+  height : auto ; 
+} 
+
+/*   .shila{ 
+  grid-column: 2/3;
+  grid-row: 1/2;   
+  margin : 40px 20px ;     
+  width : 200px ; 
+  height : auto ; 
+} */
 
 
+.monogram{ 
+  grid-column: 3/4;
+  grid-row: 1/2;   
+  margin : 20px 20px ;   ;  
+  width : 200px ; 
+  height : auto ; 
+} 
+
+.shillastay{ 
+  grid-column: 4/5;
+  grid-row: 1/2;   
+  margin : 20px 20px ;  
+  width : 200px ; 
+  height : auto ; 
 }
+
+.foot_list{ 
+  grid-column: 2/-1;
+  display : flex ;  
+  list-style: none; 
+  color : #666 ;  
+  align-items: center; 
+  font-size: 12px ;
+} 
+
+.foot_list >li {
+  margin : 0 10px ; 
+}
+
+.sns{
+  grid-column : 7/-1  
+}
+
+
+.foot02{
+  display : grid ; 
+  grid-template-columns: 5fr 1fr;
+  grid-template-rows: 1fr 1fr ;   
+  margin-top : 0 ;  
+}  
+
+.rules{  
+  grid-column: 1/2;    
+  display : flex ; 
+  list-style: none ;  
+  font-size: 16px ; 
+  line-height: 24px ;
+  color : #666 ; 
+  margin : 20px  0 0 0  ;  
+  padding: 0 ;
+} 
+
+
+
+.language{
+  grid-column : 2/-1  ; 
+  display : flex ; 
+  list-style : none ;  } 
+
+.language>li {
+  margin : 0 10px ; 
+  width : 70px ; 
+}
+
+.info{
+  grid-row: 2/-1 ; 
+  display : inline-block ; 
+  margin-top : 0 ; 
+  font-size: 16px; 
+  margin : 0 ; 
+  padding : 0 ;  
+  color : #666 ;   
+  line-height: 24px ;
+} 
+
+.certif{ 
+  grid-column: 2/-1; 
+  grid-row: 2/-1;  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .footbox02{
   width : 100% ;   
-  height : 183px ; }  
+  height : 183px ; 
+  position: absolute ; 
+}  
 
 
 
@@ -1267,46 +1381,9 @@ iframe{
   width : 1210px ; 
   height : 183px ; 
   margin : auto ; 
-  background: url(../images/footshot02.png) no-repeat;
+/*   background: url(../images/footshot02.png) no-repeat;
   background-size: cover;
-}
-
-
-
-
-
-
-/* .rectangle-3d { 
-  align-self: stretch;
-  flex-shrink: 0;
-  position: relative;
-  min-width: 0;
-  height: 167px;
-  background: #f1e3c4;
-  z-index: 89;
-}  
- */
-
-
-/* .frame-3c {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  flex-wrap: nowrap;
-  position: relative;
-  margin: 149px 0 0 0;
-  z-index: 88;
-}  */
-
-/* .rectangle-3d { 
-  align-self: stretch;
-  flex-shrink: 0;
-  position: relative;
-  min-width: 0;
-  height: 167px;
-  background: #f1e3c4;
-  z-index: 89;
-} */
+ */}
 
 
 .rectangle-3e {
@@ -1345,10 +1422,10 @@ iframe{
 
   .arrow_b {
     position: absolute;
-    left: 5%; /* 배너 너비의 5% */
+    left: 5%; 
     top: 50%;
     transform: translateY(-50%);
-    width: 12%;          /* 배너 너비의 6% */ 
+    width: 12%;           
     opacity : 80% ; 
     min-width: 20px;
     min-height: 20px;
@@ -1359,10 +1436,10 @@ iframe{
 
   .arrow_f {
     position: absolute;
-    right: 5%; /* 배너 너비의 5% */
+    right: 5%; 
     top: 50%; 
     transform: translateY(-50%);
-    width: 12%;          /* 배너 너비의 6% */ 
+    width: 12%;          
     opacity : 80% ; 
     min-width: 20px;
     min-height: 20px;
@@ -1534,11 +1611,7 @@ iframe{
   z-index: 49;
 }
 .check-in {
-  display: flex;
-/* /*   align-items: flex-start;
- */  
-/*  justify-content: center ; 
- */   
+  display: flex;   
  position: absolute;
   height: 24px;
   top: -1px;
@@ -1677,10 +1750,7 @@ iframe{
   width: 36px;
   height: 55px;
   top: 2px;
-  left: 853px;
-   background: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-07-29/xxe9nycc8i.png)
-    no-repeat center;
-   background-size: cover;
+  left: 853px; 
   z-index: 45;
 }
 
@@ -1845,4 +1915,12 @@ iframe{
   text-align: left;
   white-space: nowrap;
   z-index: 56;
-}
+} 
+
+
+
+ .valid-html, .valid-css{
+  position: relative ; 
+  left : 700px ;  
+  top : 200px ; 
+ }

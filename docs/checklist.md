@@ -58,7 +58,7 @@ CSS 유효성 검사
 \<a href="https://jigsaw.w3.org/css-validator/validator?uri=내프로젝트주소"\>\<img src="https://jigsaw.w3.org/css-validator/images/vcss" alt="유효성검사"\>\</a\>
 
 작성예시   
-\<a href="https://validator.w3.org/check?uri=https://nicky202505.github.io/project02\>\<img src="https://www.w3.org/Icons/valid-html401" alt=""\>\</a\> \<a href="https://jigsaw.w3.org/css-validator/validator?uri=mangopub.cafe24.com"\>\<img 
+\<a href="https://validator.w3.org/check?uri=mangopub.cafe24.com"\>\<img src="https://www.w3.org/Icons/valid-html401" alt=""\>\</a\> \<a href="https://jigsaw.w3.org/css-validator/validator?uri=mangopub.cafe24.com"\>\<img 
 
 src="https://jigsaw.w3.org/css-validator/images/vcss" alt=""\>\</a\>
 
