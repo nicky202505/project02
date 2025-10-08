@@ -1,0 +1,184 @@
+/* =========================================
+   Responsive Styles Only  (by 책갈피)
+   - 이 파일에는 @media 쿼리만 둡니다.
+   - 기본 스타일(색/레이아웃/타이포)은 style.css에 유지
+========================================= */
+
+/* ---------- Header (h_wrap / rectangle-1) ---------- */
+@media (max-width: 1024px){
+  .h_wrap{ height: auto; }
+  .rectangle-1{ height: auto; padding: 8px 12px; }
+  .top-logo{ order: 1; margin: 0 auto 4px; } /* 로고를 상단 중앙 */
+  .group-5, .calender_box{ order: 2; }
+  .rectangle-3, .rectangle-4, .top-rewards, .group{ order: 3; }
+  .shilla-hotel-introduction, .membership, .the-shilla-shop{ order: 4; }
+}
+@media (max-width: 640px){
+  .hotel-search, .reservation-calendar{ font-size: 14px; }
+  .shilla-hotel-introduction, .membership, .the-shilla-shop{ font-size: 14px; }
+  .top-logo{ width: 160px; height: 40px; }
+}
+
+/* ---------- 예약창 (group-40 / rectangle-41 / search_box / table) ---------- */
+@media (max-width: 1024px){
+  .group-40{ padding: 16px 140px 16px 16px; }
+  .search_box{ width: 120px; height: 52px; }
+  .search{ font-size: 16px; }
+  .table tr:nth-child(2) td{ font-size: 15px; }
+}
+@media (max-width: 768px){
+  .group-40{ padding: 14px 14px 76px 14px; }
+  .search_box{
+    position: static; transform: none;
+    margin-top: 12px; width: 100%; height: 48px; border-radius: 6px;
+  }
+  .table{ font-size: 14px; }
+  /* 필요 시 라벨 행 숨김
+  .table tr:first-child { display: none; }
+  */
+}
+
+/* ---------- 다이닝 박스 (rectangle-7) ---------- */
+@media (max-width: 768px){
+  .rectangle-7{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    padding: 20px;
+    gap: 12px;
+  }
+  .online-reservation,
+  .dining-reservation{
+    font-size: 14px;
+    text-align: center;
+  }
+}
+
+/* ---------- 갤러리 #1 (frame-8 / group-13 그리드) ---------- */
+@media (max-width: 1024px){
+  .group-13{
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "a a"
+      "b c"
+      "d e";
+  }
+}
+@media (max-width: 640px){
+  .group-13{
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "a"
+      "b"
+      "c"
+      "d"
+      "e";
+    gap: 16px;
+  }
+  .special-offer{ font-size: 28px; }
+  .special-offer-10{ font-size: 14px; letter-spacing: 2px; }
+}
+
+/* ---------- 신라에스 (frame-19 / group-1a) ---------- */
+@media (max-width: 980px){
+  .group-1a{
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "img"
+      "info";
+  }
+  .group-1b{ grid-column: 1; grid-row: 2; }
+  .group-1e, .group-1f, .es-anniversary-event{
+    grid-column: 1; grid-row: 2;
+    margin-left: 20px;
+  }
+  .group-1e{ margin-top: 24px; }
+  .group-1f{ margin-top: 72px; }
+  .es-anniversary-event{ margin-top: 140px; }
+  .rectangle-1c{ min-height: 240px; }
+}
+@media (max-width: 600px){
+  .shilla-es-membership{ font-size: 22px; }
+  .shilla-membership{ font-size: 13px; letter-spacing: 2px; }
+  .shilla-es{ font-size: 14px; }
+  .es-anniversary-event{ font-size: 14px; }
+  .group-1f{ max-width: none; }
+}
+
+/* ---------- 리워즈 (frame-20 / group-26) ---------- */
+@media (max-width: 980px){
+  .group-26{
+    grid-template-columns: 1fr;
+    row-gap: 16px;
+    padding: 24px;
+    min-height: auto;
+  }
+  .rectangle-28{ grid-column:1; grid-row:1; justify-self:center; margin-bottom: 8px; }
+  .group-29{ grid-column:1; grid-row:2; }
+  .frame-2b{ grid-column:1; grid-row:3; gap: 16px 24px; }
+  .bottom-text-box{ grid-column:1; grid-row:4; max-width:none; }
+  .group-2e{ grid-column:1; grid-row:5; justify-self:center; width: 160px; }
+  .join-button{ line-height:40px; }
+}
+@media (max-width: 600px){
+  .shilla-rewards-24{ font-size: 22px; }
+  .membership-25{ font-size: 13px; letter-spacing: 2px; }
+  .member-exclusive-products{ font-size: 18px; }
+  .shilla-rewards-benefit, .shilla-rewards-points{ font-size: 18px; }
+  .bottom-text-box{ font-size: 14px; line-height: 22px; }
+  .rectangle-28{ width: 180px; height: 115px; }
+}
+
+/* ---------- 갤러리 #2 (frame-30 / 유튜브) ---------- */
+@media (max-width: 640px){
+  .frame-30{ padding: 0 12px; }
+  .rectangle-3a, .rectangle-3b{ min-height: 160px; }
+  .gallery{ font-size: 28px; }
+  .gallery-38{ font-size: 14px; letter-spacing: 2px; }
+}
+
+/* ---------- 푸터 (footbox01 / footbox02) ---------- */
+@media (max-width: 980px){
+  .foot01{
+    grid-template-columns: 1fr 1fr auto;
+    grid-template-rows: auto auto auto;
+  }
+  .ci_bottom{ grid-column: 1 / -1; grid-row: 1 / 2; justify-content: center; }
+  .shila{ grid-column: 1 / 2; grid-row: 2 / 3; justify-content: center; }
+  .monogram{ grid-column: 2 / 3; grid-row: 2 / 3; justify-content: center; }
+  .shillastay{ grid-column: 3 / 4; grid-row: 2 / 3; justify-content: center; }
+  .sns{ grid-column: 3 / 4; grid-row: 1 / 2; justify-self: end; }
+
+  .foot_list{ grid-column: 1 / -1; grid-row: 3 / 4; justify-content: center; }
+
+  .foot02{
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto;
+    text-align: center;
+  }
+  .language{ justify-content: center; }
+  .certif{ justify-self: center; }
+}
+@media (max-width: 600px){
+  .foot01{ padding: 16px 10px; }
+  .foot_list{ font-size: 11px; }
+  .rules{ justify-content: center; }
+  .info{ text-align: left; }
+}
+
+/* ---------- (선택) 1600px 이상 대형 화면 보정 ---------- */
+@media (min-width: 1600px){
+  .frame-8,
+  .frame-19,
+  .frame-20,
+  .frame-30,
+  .footbox01,
+  .footbox02,
+  .group-40,
+  .rectangle-7{
+    margin-left: auto;
+    margin-right: auto;
+    left: 0; right: 0;
+  }
+}

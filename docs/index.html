@@ -14,14 +14,15 @@
 
 <link rel="stylesheet" href="https://hangeul.pstatic.net/hangeul_static/css/nanum-jejumyeongjo.css">
 
-<link rel="stylesheet" href="css/index.css" /> 
+<link rel="stylesheet" href="css/index.css" />          <!-- 기본 스타일 -->
+<link rel="stylesheet" href="css/responsive.css"> 
 
 <meta name="신라 호텔 클론 코딩 " content="신라 호텔 클론 코딩 " />
 <meta property="og:title" content=" " />
 <meta property="og:description" content="신라 호텔 " />
 <meta name="theme-color" content="#FFFFFF" />
 <meta name="application-name" content=" " />
-<link rel="icon" type="image/x-icon" href="favicon.ico" />
+<link rel="icon" type="image/x-icon" href="favicon.ico" />  
 
   </head>
   <body>
@@ -87,23 +88,66 @@
  
 
     <div class="main-container">
-                <div class="banner">
-                  <a href="#"><img src="images/arrow01.png" alt="back" class="arrow_b"></a>
-                  <a href="#"><img src="images/arrow02.png" alt="back" class="arrow_f"></a>
-                  <a href="#">
-                    <div id="banner04"   class="banner04" style="display:block;"></div>
-                  </a>
-                          <a href="#">
-                            <div id="banner05"   class="banner05" style="display:none;"></div>
-                          </a>
-                        <div id="banner01"   class="banner01" style="display:none;"></div>
-                        <a href="#">
-                          <div id="banner02"   class="banner02" style="display:none;"></div>
-                        </a>
-                       <a href="">
-                         <div id="banner03"   class="banner03" style="display:none;"></div>
-                       </a>
-                </div>
+             <div class="banner">
+  <a href="#"><img src="images/arrow01.png" alt="back" class="arrow_b"></a>
+  <a href="#"><img src="images/arrow02.png" alt="forward" class="arrow_f"></a>
+
+  <a href="#">
+    <div id="banner04" class="banner-item banner04"></div>
+  </a>
+
+  <a href="#">
+    <div id="banner05" class="banner-item banner05"></div>
+  </a>
+
+  <div id="banner01" class="banner-item banner01"></div>
+
+  <a href="#">
+    <div id="banner02" class="banner-item banner02"></div>
+  </a>
+
+  <a href="#">
+    <div id="banner03" class="banner-item banner03"></div>
+  </a>
+</div>
+
+
+      <div class="group-40">
+        <div class="search_box">
+          <a href="#"><span class="search">검색</span></a>
+        </div>
+      </div>  
+            <div class="rectangle-41">  
+              
+                <table class="table">
+                  <tr>
+                    <td>호텔 또는 도시 </td>
+                    <td>체크인</td>
+                    <td>
+                      <img src="images/night002.png" alt="1박" class="night">
+                    </td>
+                    <td>체크아웃 </td>
+                    <td>객실</td>
+                    <td>성인</td>
+                    <td>어린이</td>
+                    <td>유아</td>
+                  </tr>
+                  <tr>
+                    <td>호텔을 선택해 주세요
+                      <img src="images/searchicon.png" alt="호텔찾기" class = 'h-search'>
+
+                    </td>
+                    <td>2025. 08. 01 (금)</td>
+                    <td>1박 </td>
+                    <td>2025. 08. 02 (토) </td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>0</td>
+                    <td>0</td>
+                  </tr>
+                </table>
+            
+           </div>  <!--리저브 테이블 끝  -->
 
       <div class="rectangle-7">  <!-- 다이닝 박스 -->
         <span class="online-reservation"
@@ -147,6 +191,8 @@
           </div>
         </div>
       </div>   <!-- 사진 갤러리 끝  -->
+
+      
       <div class="frame-19">  <!-- 신라 에스 시작  -->
         <div class="group-1a">
           <div class="group-1b"><div class="rectangle-1c"></div></div>
@@ -170,6 +216,8 @@
         </div>  
 
       </div>  <!-- 신라 에스 끝 -->
+
+
       <div class="frame-20">  <!-- 리워즈 시작  -->
         <div class="group-21">
           <div class="frame-22">
@@ -219,6 +267,7 @@
           </div>
         </div>
       </div> <!-- 리워즈 끝 -->
+
       <div class="frame-30">  
         <div class="frame-31">
           <div class="group-32">
@@ -253,43 +302,6 @@
       </div>           
 
 
-      <!-- 예약테이블 시작 -->
-      <div class="group-40">
-        <div class="search_box">
-          <a href="#"><span class="search">검색</span></a>
-        </div>
-      </div>  
-            <div class="rectangle-41">  
-              
-                <table class="table">
-                  <tr>
-                    <td>호텔 또는 도시 </td>
-                    <td>체크인</td>
-                    <td>
-                      <img src="images/night002.png" alt="1박" class="night">
-                    </td>
-                    <td>체크아웃 </td>
-                    <td>객실</td>
-                    <td>성인</td>
-                    <td>어린이</td>
-                    <td>유아</td>
-                  </tr>
-                  <tr>
-                    <td>호텔을 선택해 주세요
-                      <img src="images/searchicon.png" alt="호텔찾기" class = 'h-search'>
-
-                    </td>
-                    <td>2025. 08. 01 (금)</td>
-                    <td>1박 </td>
-                    <td>2025. 08. 02 (토) </td>
-                    <td>1</td>
-                    <td>2</td>
-                    <td>0</td>
-                    <td>0</td>
-                  </tr>
-                </table>
-            
-           </div>  <!--리저브 테이블 끝  -->
 
 
     </div>  <!--  바디 컨테이너 끝 --> 
