@@ -1318,12 +1318,17 @@ iframe{
   grid-column: 1/2;    
   display : flex ; 
   list-style: none ;  
-  font-size: 16px ; 
-  line-height: 24px ;
+  font-size: 12px ; 
+  line-height: 18px ;
   color : #666 ; 
-  margin : 20px  0 0 0  ;  
   padding: 0 ;
 } 
+
+.rules >li{ 
+  width : 100px ; 
+  margin : 0 5px ;  
+  padding : 0 ; 
+}
 
 
 
@@ -1333,19 +1338,20 @@ iframe{
   list-style : none ;  } 
 
 .language>li {
-  margin : 0 10px ; 
+  margin : 0 5px ; 
   width : 70px ; 
+  color : #666 ; 
 }
 
 .info{
   grid-row: 2/-1 ; 
   display : inline-block ; 
   margin-top : 0 ; 
-  font-size: 16px; 
+  font-size: 12px; 
   margin : 0 ; 
   padding : 0 ;  
   color : #666 ;   
-  line-height: 24px ;
+  line-height: 18px ;
 } 
 
 .certif{ 
@@ -1923,3 +1929,133 @@ iframe{
   left : 700px ;  
   top : 200px ; 
  }
+
+
+ /* ====== Global container & media reset ====== */
+:root { --page-max: 1200px; --gpad: 16px; }
+
+*,
+*::before,
+*::after { box-sizing: border-box; }
+
+img, video { max-width: 100%; height: auto; display: block; }
+
+.main-container {
+  /* 이미 있음: width:100%, margin:0 auto, padding-top:90px */
+  max-width: 1920px;           /* 유지 */
+  padding-inline: var(--gpad); /* 좌우 여백 추가 */
+}
+
+/* 공통 중앙 래핑(섹션 폭을 화면에 맞추기) */
+.section-center {
+  width: min(var(--page-max), 100%);
+  margin-inline: auto;
+}
+
+/* ====== Header: 겹침 방지 (absolute → sticky) ====== */
+.h_wrap {
+  position: sticky; /* 기존 absolute 대체 */
+  top: 0;
+  z-index: 1000;
+}
+.h_wrap_copy { display: none; } /* 스크롤용 대체 헤더 미사용이면 숨김 */
+
+/* ====== Banner: 고정 1920×650 제거, 반응형 종횡비 ====== */
+.banner {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9; /* 필요시 21/9 등으로 조정 */
+  max-height: 70vh;     /* 너무 커지지 않게 */
+  overflow: hidden;
+  margin-inline: auto;
+}
+.banner > a,
+.banner > div {
+  position: absolute;
+  inset: 0;             /* top:0 right:0 bottom:0 left:0 */
+  width: 100%;
+  height: 100%;
+}
+.banner01, .banner02, .banner03, .banner04, .banner05 {
+  background-size: cover;
+  background-position: center;
+  width: 100% !important;
+  height: 100% !important;
+  left: 0 !important;
+}
+
+/* 배너 화살표: 고정 픽셀 제한 제거 */
+.arrow_b, .arrow_f {
+  width: clamp(20px, 3vw, 40px);
+  height: auto;
+  min-width: 0; min-height: 0; max-width: none; max-height: none;
+}
+
+/* ====== 주요 섹션 폭/여백 중앙 정렬 (고정 margin-left 제거) ====== */
+.rectangle-7,
+.frame-8,
+.frame-19,
+.frame-20,
+.frame-30,
+.rectangle-39,
+.group-21,
+.group-32 {
+  width: min(var(--page-max), 100%) !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  padding-inline: var(--gpad);
+}
+
+/* 기존 “margin: ... 0 0 362px” 같은 좌측 고정 마진 무력화 */
+.rectangle-7,
+.frame-8,
+.frame-19,
+.frame-20,
+.frame-30 { margin-left: auto !important; }
+
+/* ====== 예약 박스: 문서 흐름으로 전환 ====== */
+.group-40,
+.rectangle-41 {
+  position: static !important;
+  width: min(var(--page-max), 100%) !important;
+  margin: 16px auto !important;
+}
+.table { width: 100%; }
+
+/* ====== YouTube: 반응형 임베드 ====== */
+.rectangle-39 {
+  position: relative;
+  height: auto !important;
+}
+.rectangle-39::before {
+  content: "";
+  display: block;
+  padding-top: 56.25%; /* 16:9 */
+}
+.rectangle-39 iframe {
+  position: absolute; inset: 0; width: 100%; height: 100%;
+}
+
+/* ====== Footer: 문서 흐름에 두기 ====== */
+.footbox02 { position: static !important; height: auto; }
+.foot02 { width: min(var(--page-max), 100%); margin-inline: auto; }
+
+/* ====== 작은 화면 대응 ====== */
+@media (max-width: 768px) {
+  .banner { aspect-ratio: 16/10; max-height: 52vh; }
+
+  .rectangle-7 { height: auto; padding-block: 16px; }
+  .online-reservation, .dining-reservation {
+    position: static !important;
+    display: block;
+    transform: none !important;
+    margin-block: 4px;
+    text-align: left;
+  }
+
+  /* 갤러리/리워즈 타이틀은 폰트 축소 */
+  .special-offer, .shilla-es-membership, .shilla-rewards-24, .gallery {
+    font-size: clamp(22px, 5vw, 32px);
+    line-height: 1.2;
+  }
+}
