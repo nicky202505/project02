@@ -478,13 +478,13 @@ button {
 }
 
 /* 불필요한 절대배치 제거 + 폭 가변화 */
-.group-9, .group-a, .group-11, .group-12, .group-13,
+.group-9, .group-a, .group-11,  
 .flex-row-b, .flex-row-ee {
   position: static !important;
   width: 100% !important;
   height: auto !important;
   margin: 0 !important;
-  left: auto !important; top: auto !important; right: auto !important;
+  left: auto !important; top: auto !important; right: auto !important; 
 }
 
 /* 타이틀 영역 중앙정렬 */
@@ -531,62 +531,55 @@ button {
   white-space: nowrap;
 }
 
-/* 갤러리 그리드
-   상단: [rectangle-14]이 좌측 2칸을 차지, [rectangle-15]가 우측
-   하단: [rectangle-17][rectangle-18][rectangle-16] 순서 */
-.group-13{
+/* 갤러리 그리드 - grid-template-areas 방식
+   table: 큰 이미지 (2x2), parm: 우상단
+   land: 좌하단, present: 중앙하단, phone: 우측 세로(2x1) */
+
+.group-11{
+  padding-top : 40px ; 
   display: grid;
-  grid-template-columns: 1fr 1fr 0.98fr;  /* 원본 비율 근사 */
-  grid-template-areas:
-    "a a b"
-    "d e c";
-  gap: 24px;
-  align-items: stretch;
+  grid-template-columns: repeat(3, 1fr);     
+  grid-template-rows: auto auto auto ; 
+  grid-template-areas: 
+    "dinner dinner parm"
+    "dinner dinner phone"
+    "land present phone";     
+    align-items: stretch;
+    gap : 16px ; 
+    overflow: hidden; /* 부모 컨테이너에 overflow 적용 */
 }
 
-/* 공통 카드 스타일 */
-.rectangle-14, .rectangle-15, .rectangle-16, .rectangle-17, .rectangle-18{
-  position: static !important;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  border-radius: 8px;
-  overflow: hidden;
-  width: 100%;
+.group-11 img { 
+  display: block;
+  width: 100%; 
+  height: auto;  
+  border-radius: 4px;
+  object-fit: cover;
 }
 
-/* 각 카드 배치 + 종횡비(원본 비슷하게) */
-.rectangle-14{ grid-area: a; aspect-ratio: 790 / 354;  background-image: url(../images/table.png); }
-.rectangle-15{ grid-area: b; aspect-ratio: 382 / 260;  background-image: url(../images/parm.jpg); }
-.rectangle-17{ grid-area: d; aspect-ratio: 385 / 260;  background-image: url(../images/land.jpg); }
-.rectangle-18{ grid-area: e; aspect-ratio: 385 / 260;  background-image: url(../images/gallery05.jpg); }
-.rectangle-16{ grid-area: c; aspect-ratio: 382 / 354;  background-image: url(../images/phone.jpg); }
+.dinner {
+  grid-area: dinner;
+} 
 
-/* 반응형 */
-@media (max-width: 1024px){
-  .group-13{
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas:
-      "a a"
-      "b c"
-      "d e";
-  }
+.parm {
+  grid-area: parm;
 }
 
-@media (max-width: 640px){
-  .group-13{
-    grid-template-columns: 1fr;
-    grid-template-areas:
-      "a"
-      "b"
-      "c"
-      "d"
-      "e";
-    gap: 16px;
-  }
-  .special-offer{ font-size: 28px; }
-  .special-offer-10{ font-size: 14px; letter-spacing: 2px; }
+.land {
+  grid-area: land;
 }
+
+.present {
+  grid-area: present;
+}
+
+.phone {
+  grid-area: phone;
+}
+
+
+
+
 
 
 /* ===== 신라에스 : 중앙정렬 + 반응형 그리드 ===== */
@@ -595,7 +588,7 @@ button {
   position: relative;
   width: 100%;
   max-width: 1224px;
-  margin: 130px auto 0;
+  margin: 130px auto 0;    /* 상단 여백, 중앙정렬, 하단 여백 0 */
   padding: 0 16px;
   box-sizing: border-box;
   z-index: 128;
@@ -609,7 +602,7 @@ button {
   gap: 24px;
   align-items: stretch;
   width: 100%;
-  height: auto;
+  height: 80%; 
 }
 
 /* 좌측 카드 이미지 */
@@ -624,29 +617,25 @@ button {
 .group-1b{
   grid-area: info;
   border-radius: 8px;
-  overflow: hidden;
 }
 
 /* 실제 회색 배경 박스 */
 .rectangle-1c{
   width: 100%;
-  height: 100%;
-  min-height: 300px;
-  background: #f6f6f6;
-  border-radius: 8px;
+  height: auto ;  
+  min-height: 320px ;
+  
 }
 
-/* --- 텍스트 : 우측 영역 위에 ‘레이어’로 올려 배치 --- */
-/* 공통: 모두 우측 칼럼(=info) 영역에 올림 */
-.group-1e, .group-1f, .es-anniversary-event{
-  grid-column: 2;          /* 우측 칼럼 */
-  grid-row: 1;             /* 같은 그리드 셀에 겹침 */
-  justify-self: start;
-  align-self: start;
-  position: relative;
-  z-index: 1;              /* 배경(.rectangle-1c) 위로 */
-  margin-left: clamp(24px, 6vw, 44px);  /* 좌 여백 */
+.shilla-es {
+  margin-top : 40px ; 
 }
+
+.group-1b {
+  background-color:  #f7f3eb;
+  padding-top: 0 ;
+}
+
 
 /* 타이틀 블록 */
 .group-1e{
@@ -702,58 +691,32 @@ button {
 .group-1e, .group-1f, .shilla-es, .es-anniversary-event{
   /* 기존 코드의 position/left/top/width/height가 있더라도 아래로 덮어쓰기 */
 }
+
+
 .frame-19{ align-items: stretch; }
-.group-1a, .group-1b, .rectangle-1c, .rectangle-1d,
-.group-1e, .group-1f{
+.group-1a, .group-1b, .rectangle-1c, .rectangle-1d
+{
   position: relative !important;
   width: auto !important;
   height: auto !important;
   top: auto !important; left: auto !important; right: auto !important; margin: 0 !important;
 }
 
-/* ===== 반응형 ===== */
-@media (max-width: 980px){
-  .group-1a{
-    grid-template-columns: 1fr;
-    grid-template-areas:
-      "img"
-      "info";
-  }
-  /* 우측 회색 박스를 별도 행으로 배치 */
-  .group-1b{
-    grid-column: 1;
-    grid-row: 2;
-  }
-  /* 텍스트도 이미지 아래로 자연스럽게 쌓이도록 */
-  .group-1e, .group-1f, .es-anniversary-event{
-    grid-column: 1;
-    grid-row: 2;          /* 회색 박스 위 */
-    margin-left: 20px;
-  }
-  .group-1e{ margin-top: 24px; }
-  .group-1f{ margin-top: 72px; }
-  .es-anniversary-event{ margin-top: 140px; }
-  .rectangle-1c{ min-height: 240px; }
-}
 
-@media (max-width: 600px){
-  .shilla-es-membership{ font-size: 22px; }
-  .shilla-membership{ font-size: 13px; letter-spacing: 2px; }
-  .shilla-es{ font-size: 14px; }
-  .es-anniversary-event{ font-size: 14px; }
-  .group-1f{ max-width: none; }
-}
+
 
 /* ===== 리워즈 : 중앙정렬 + 반응형 그리드 ===== */
 
 .frame-20{
   position: relative;
   width: 100%;
-  max-width: 1200px;
-  margin: 130px auto 0;
+  max-width: 1200px; 
+  margin: 120px auto 0;     /* 원하는 80px로 복원 */
   padding: 0 16px;
   box-sizing: border-box;
-  z-index: 92;
+  z-index: 92;  
+  background-color: #f7f3eb;
+  height : auto ; 
 }
 
 /* 타이틀 + 콘텐츠 2행 그리드 */
@@ -931,42 +894,12 @@ button {
 }
 
 /* ===== 기존 절대좌표/크기값 무력화 ===== */
-.frame-20, .group-21, .frame-22, .group-23,
 .group-26, .rectangle-27, .rectangle-28, .group-29, .group-2a,
 .frame-2b, .group-2c, .group-2d, .bottom-text-box,
 .group-2e, .rectangle-2f, .join-button{
   top:auto !important; left:auto !important; right:auto !important; bottom:auto !important;
   margin:0 !important;
   width:auto; height:auto;
-}
-
-/* ===== 반응형 ===== */
-@media (max-width: 980px){
-  .group-26{
-    grid-template-columns: 1fr;
-    row-gap: 16px;
-    padding: 24px;
-    min-height: auto;
-  }
-  .rectangle-28{
-    grid-column:1; grid-row:1;
-    justify-self:center;
-    margin-bottom: 8px;
-  }
-  .group-29{ grid-column:1; grid-row:2; }
-  .frame-2b{ grid-column:1; grid-row:3; gap: 16px 24px; }
-  .bottom-text-box{ grid-column:1; grid-row:4; max-width:none; }
-  .group-2e{ grid-column:1; grid-row:5; justify-self:center; width: 160px; }
-  .join-button{ line-height:40px; }
-}
-
-@media (max-width: 600px){
-  .shilla-rewards-24{ font-size: 22px; }
-  .membership-25{ font-size: 13px; letter-spacing: 2px; }
-  .member-exclusive-products{ font-size:18px; }
-  .shilla-rewards-benefit, .shilla-rewards-points{ font-size:18px; }
-  .bottom-text-box{ font-size:14px; line-height:22px; }
-  .rectangle-28{ width: 180px; height: 115px; }
 }
 
 
@@ -1077,11 +1010,7 @@ button {
   background: #f6f6f6;
 }
 
-/* 모바일 */
-@media (max-width: 640px){
-  .frame-30{ padding: 0 12px; }
-  .rectangle-3a, .rectangle-3b{ min-height: 160px; }
-}
+
 
 
 

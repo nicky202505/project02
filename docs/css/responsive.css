@@ -57,25 +57,28 @@
 
 /* ---------- 갤러리 #1 (frame-8 / group-13 그리드) ---------- */
 @media (max-width: 1024px){
-  .group-13{
-    grid-template-columns: 1fr 1fr;
+  .group-11{
+    grid-template-columns: repeat(3, 1fr) ; 
     grid-template-areas:
-      "a a"
-      "b c"
-      "d e";
+     "dinner dinner parm"
+    "dinner dinner phone"
+    "land  present phone"; 
   }
-}
+
+
 @media (max-width: 640px){
-  .group-13{
+  .group-11{
     grid-template-columns: 1fr;
     grid-template-areas:
-      "a"
-      "b"
-      "c"
-      "d"
-      "e";
+      "dinner"
+      "parm"
+      "land"
+      "present"
+      "phone";
     gap: 16px;
   }
+
+  
   .special-offer{ font-size: 28px; }
   .special-offer-10{ font-size: 14px; letter-spacing: 2px; }
 }
