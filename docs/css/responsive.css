@@ -1,8 +1,5 @@
-/* =========================================
-   Responsive Styles Only  (by 책갈피)
-   - 이 파일에는 @media 쿼리만 둡니다.
-   - 기본 스타일(색/레이아웃/타이포)은 style.css에 유지
-========================================= */
+
+
 
 /* ---------- Header (h_wrap / rectangle-1) ---------- */
 @media (max-width: 1024px){
@@ -20,23 +17,65 @@
 }
 
 /* ---------- 예약창 (group-40 / rectangle-41 / search_box / table) ---------- */
+
+/* ===== 반응형 ===== */
 @media (max-width: 1024px){
-  .group-40{ padding: 16px 140px 16px 16px; }
+  .group-40{
+    padding: 16px 140px 16px 16px;
+  }
   .search_box{ width: 120px; height: 52px; }
   .search{ font-size: 16px; }
   .table tr:nth-child(2) td{ font-size: 15px; }
 }
+
 @media (max-width: 768px){
-  .group-40{ padding: 14px 14px 76px 14px; }
-  .search_box{
-    position: static; transform: none;
-    margin-top: 12px; width: 100%; height: 48px; border-radius: 6px;
+  .group-40{
+    padding: 14px 14px 76px 14px; 
   }
-  .table{ font-size: 14px; }
-  /* 필요 시 라벨 행 숨김
-  .table tr:first-child { display: none; }
+  .search_box{
+    position: static;
+    transform: none;
+    margin-top: 12px;
+    width: 100%;
+    height: 48px;
+    border-radius: 6px;
+  }
+  .table{
+    font-size: 14px;
+  }
+
+
+
+/* ===== 반응형 ===== */
+@media (max-width: 1024px){
+  .group-40{
+    padding: 16px 140px 16px 16px;
+  }
+  .search_box{ width: 120px; height: 52px; }
+  .search{ font-size: 16px; }
+  .table tr:nth-child(2) td{ font-size: 15px; }
+}
+
+@media (max-width: 768px){
+  .group-40{
+    padding: 14px 14px 76px 14px; 
+  }
+  .search_box{
+    position: static;
+    transform: none;
+    margin-top: 12px;
+    width: 100%;
+    height: 48px;
+    border-radius: 6px;
+  }
+  .table{
+    font-size: 14px;
+  }
+  /* 1행(라벨) 숨기고 2행만 간결하게 보여주고 싶다면 주석 해제
+  .table tr:first-child { display:none; }
   */
 }
+
 
 /* ---------- 다이닝 박스 (rectangle-7) ---------- */
 @media (max-width: 768px){
